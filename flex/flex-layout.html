@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 1500px;
+    }
+
+    header {
+      border-bottom: 1px solid gray;
+    }
+
+    footer {
+      border-top: 1px solid gray;
+    }
+
+    nav {
+      border-right: 1px solid gray;
+    }
+
+    aside {
+      border-left: 1px solid gray;
+    }
+
+    nav, aside {
+      /* 너비 고정 */
+      flex-basis: 150px;
+      /* 다른 놈 희생 */
+      flex-shrink: 0;
+    }
+
+    .content {
+      display: flex;
+    }
+
+    main {
+      text-align: justify;
+      padding: 10px;
+      column-count: 4;
+      column-width: 200px;
+      column-gap: 20px;
+      column-rule-color: red;
+      column-rule-style: solid;
+      column-rule-width: 1px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Holy Grail Layout</h1>
+    </header>
+    <section class="content">
+      <nav>
+        <ul>
+          <li>main</li>
+          <li>about</li>
+          <li>help</li>
+        </ul>
+      </nav>
+      <main>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        sunt fugit harum, nisi voluptate quis! Laudantium quos eum natus magni,
+        rem impedit dolor eos maxime eligendi magnam illum nisi. Deleniti.
+        Excepturi quasi, a quisquam voluptatibus error tenetur ab aliquid
+        veritatis, ipsum praesentium animi dicta modi maxime suscipit officia!
+        Possimus quo sequi accusantium odit! Debitis, sit? Omnis laborum nemo
+        soluta quae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        sunt fugit harum, nisi voluptate quis! Laudantium quos eum natus magni,
+        rem impedit dolor eos maxime eligendi magnam illum nisi. Deleniti.
+        Excepturi quasi, a quisquam voluptatibus error tenetur ab aliquid
+        veritatis, ipsum praesentium animi dicta modi maxime suscipit officia!
+        Possimus quo sequi accusantium odit! Debitis, sit? Omnis laborum nemo
+        soluta quae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        sunt fugit harum, nisi voluptate quis! Laudantium quos eum natus magni,
+        rem impedit dolor eos maxime eligendi magnam illum nisi. Deleniti.
+        Excepturi quasi, a quisquam voluptatibus error tenetur ab aliquid
+        veritatis, ipsum praesentium animi dicta modi maxime suscipit officia!
+        Possimus quo sequi accusantium odit! Debitis, sit? Omnis laborum nemo
+        soluta quae!
+      </p>
+      </main>
+      <aside>
+        AD (광고)
+      </aside>
+    </section>
+    <footer>
+      <a href="www.naver.com">홈페이지</a>
+    </footer>
+  </div>
+</body>
+</html>
